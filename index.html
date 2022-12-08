@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scrollmap Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <link rel="stylesheet" href="./lib/scrollmap.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <!--add scrollmap content here-->
+    <div class="content">
+        <!--title block, background image is title image-->
+        <div class="row" style="background-image:url(img/Screenshot\ \(25\).png)">
+            <div class="center title">
+                <!--title text-->
+                <h1>The Wayward Bus</h1>
+                <!--subtitle or author-->
+                <p class="author">Liam Nicol</p>
+            </div>
+        </div>
+        <!--first content block-->
+        <div class="row">
+            <div class="center">
+                <p>Information about my Mapbox studio basemap.</p>
+            </div>
+        </div>
+        <!--image block-->
+        <div class="row">
+            <div class="center">
+                <img class="fit" src="img/magfields.jpg">
+                <img class="fit" src="img/Chutes_Too_Narrow.png">
+                <img class="fit" src="img/spec1.png">
+                <img class="fit" src="img/spec2.png">
+                <p>Here is a look into the spec sheet and inspiration for this aesthetic. I drew inspiration from cartoonish and pastel album art. Not only do these albums convey a visual aesthetic, but the music itself reinforces the aesthetic as well. So, I wanted to create a basemap that doesn't just make me think of the visual art, but makes me think of the sounds of the album as well.</p>
+            </div>
+        </div>
+        <!--SLIDESHOW block-->
+        <div class="row">
+            <div class="center">
+                <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <!--indicator buttons at the bottom of the carousel that show the total number of slides-->
+                    <div class="carousel-indicators">
+                        <!--there should be as many of these buttons as there are slides in your carousel-->
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <!--images in the carousel-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/Screenshot (26).png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Screenshot (27).png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Screenshot (28).png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Screenshot (29).png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Screenshot (30).png" class="w-100" alt="...">
+                        </div>
+                    </div>
+                    <!--previous/next buttons that allow users to click from one slide to the next-->
+                    <button id="prev-button" class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button id="next-button" class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--image block-->
+        <div class="row">
+            <!--left aligned image-->
+            <div class="right">
+                <img class="fit" src="img/Screenshot (24).png">
+            </div>
+            <!--right aligned caption-->
+            <div class="left">
+                <p class="vert-center">In the map, roads are deep purple, land is light green with a stitch pattern, parks are yellow, and hillshade is a lighter purple. The larger areas of land are labeled with a video game-like font.</p>
+            </div>
+        </div>
+        
+        
+        <!--background images with text scrolling over them-->
+        <div class="scroll-container">    
+            <!--background images-->
+            <div class="background-item">
+                <img src="img/mke.png" data-slide="0" class="fill vert-center">
+                <img src="img/montreal.png" data-slide="1" class="fill vert-center">
+                <img src="img/yellowstone.png" data-slide="2" class="fill vert-center">
+                <img src="img/casablanca.png" data-slide="3" class="fill vert-center">
+            </div>
+            <!--foreground text blocks-->
+            <div class="foreground-item">
+                <div class="row">
+                    <div class="center background-transparent rounded">
+                        <p class="no-margin">Let's see what a few different places look like with the basemap.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">As you can see, zooming in makes the land much lighter in comparison to the smaller scales. Several layers not related to the components were added, such as pink areas representing hospitals, brown to show universities, and navy blue for airports.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center background-transparent rounded">
+                        <p class="no-margin">I really wanted to convey the aesthetic of a whimsical, cartoonish pastel drawing. So, I used light colors to represent landscape attributes, with darker colors mostly being limited to the built landscape. You may also notice a stitch-like pattern on some aspects of the landscape. This was chosen to make the basemap feel crafted and/or painted.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">I used Merriweather Bold font to represent larger scale labels because I thought it most looked like the text on the Wayward Bus album cover. For smaller scale labels, I used Press Start font to reinforce the imaginary feel to the aesthetic. Intially, I had these swapped, but found the Press Start font too overbearing for large scale labels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mapbox iframe-->
+        <div class="row">
+            <div class="center-wide">
+                <p>Play around the full map below.</p>
+                <iframe class="fit" height="500" src="https://api.mapbox.com/styles/v1/lnicol2/clbd64wu4002p16nk7undfxom.html?title=view&access_token=pk.eyJ1IjoibG5pY29sMiIsImEiOiJjbGE5MWNzMDQwOThhM3BvNWFwZ2RncWRpIn0.rvwPHtBRE4CaeDGF0RGRPQ&zoomwheel=true&fresh=true#6.03/37.623/-0.952" ></iframe>
+            </div>
+        </div>
+    </div>
+    
+
+<script type="text/javascript" src="./lib/scrollmap.js"></script>
+<script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+
+</body>
+</html>
